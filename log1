@@ -1,0 +1,79 @@
+[2018/06/18-09:35:07.169] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.prediction]  - ******************************************
+[2018/06/18-09:35:07.171] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.prediction]  - ** Start train session s1
+[2018/06/18-09:35:07.171] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.prediction]  - ******************************************
+[2018/06/18-09:35:07.208] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.data] T-BbdSQNGc - [ct: 41] Need to compute sampleId before checking memory cache
+[2018/06/18-09:35:07.209] [FT-TrainWorkThread-iZtVIjgS-167] [DEBUG] [dip.shaker.runner] T-BbdSQNGc - [ct: 42] Script settings sampleMax=104857600 processedMax=-1
+[2018/06/18-09:35:07.210] [FT-TrainWorkThread-iZtVIjgS-167] [DEBUG] [dip.shaker.runner] T-BbdSQNGc - [ct: 43] Processing with sampleMax=104857600 processedMax=524288000
+[2018/06/18-09:35:07.254] [FT-TrainWorkThread-iZtVIjgS-167] [DEBUG] [dip.shaker.runner] T-BbdSQNGc - [ct: 87] Computed required sample id : 809ab4f1d551cfeef03a8eea28c1fb5b-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce
+[2018/06/18-09:35:07.259] [FT-TrainWorkThread-iZtVIjgS-167] [DEBUG] [dku.shaker.cache] T-BbdSQNGc - Shaker MemoryCache get on DKU_TUTORIAL_ML.customers_labeled key=ds=48c7013032d56f122eaab86dff500679--scr=b85a1ed6cd1ac362e6788c3e9c338f5d--samp=809ab4f1d551cfeef03a8eea28c1fb5b-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce: hit
+[2018/06/18-09:35:07.262] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 95] Column customerID meaning=Text fail=0
+[2018/06/18-09:35:07.263] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 96] Column gender meaning=Gender fail=0
+[2018/06/18-09:35:07.264] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 97] Column age_first_order meaning=LongMeaning fail=0
+[2018/06/18-09:35:07.266] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 99] Column user_agent_brand meaning=Text fail=0
+[2018/06/18-09:35:07.267] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 100] Column user_agent_os meaning=Text fail=0
+[2018/06/18-09:35:07.268] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 101] Column ip_address_country meaning=CountryMeaning fail=0
+[2018/06/18-09:35:07.269] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 102] Column ip_address_geopoint meaning=GeoPoint fail=0
+[2018/06/18-09:35:07.270] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 103] Column campaign meaning=Boolean fail=0
+[2018/06/18-09:35:07.271] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 104] Column pages_visited_avg meaning=DoubleMeaning fail=0
+[2018/06/18-09:35:07.272] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.shaker.schema] T-BbdSQNGc - [ct: 105] Column high_revenue meaning=Boolean fail=0
+[2018/06/18-09:35:07.295] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.datasets.file] T-BbdSQNGc - [ct: 128] Building Filesystem handler config: {"connection":"filesystem_managed","path":"/DKU_TUTORIAL_ML.customers_labeled","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2018/06/18-09:35:07.316] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.datasets.ftplike] T-BbdSQNGc - Enumerating Filesystem dataset prefix=
+[2018/06/18-09:35:07.327] [FT-TrainWorkThread-iZtVIjgS-167] [DEBUG] [dku.fs.local] T-BbdSQNGc - [ct: 160] Enumerating local filesystem prefix=/
+[2018/06/18-09:35:07.329] [FT-TrainWorkThread-iZtVIjgS-167] [DEBUG] [dku.fs.local] T-BbdSQNGc - [ct: 162] Enumeration done nb_paths=8 size=186735
+[2018/06/18-09:35:07.337] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.input.push] T-BbdSQNGc - USTP: push selection.method=HEAD_SEQUENTIAL records=100000 ratio=0.02 col=null
+[2018/06/18-09:35:07.347] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 180] Extractor run: limit={"maxBytes":-1,"maxRecords":100000,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2018/06/18-09:35:07.395] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 228] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s2.csv.gz totalRecsBefore=0
+[2018/06/18-09:35:07.520] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 353] after stream totalComp=23739 totalUncomp=104634 totalRec=1349
+[2018/06/18-09:35:07.521] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 354] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s7.csv.gz totalRecsBefore=1349
+[2018/06/18-09:35:07.565] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 398] after stream totalComp=47210 totalUncomp=208731 totalRec=2698
+[2018/06/18-09:35:07.566] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 399] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s0.csv.gz totalRecsBefore=2698
+[2018/06/18-09:35:07.612] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 445] after stream totalComp=70275 totalUncomp=313098 totalRec=4046
+[2018/06/18-09:35:07.613] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 446] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s3.csv.gz totalRecsBefore=4046
+[2018/06/18-09:35:07.658] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 491] after stream totalComp=93662 totalUncomp=417558 totalRec=5394
+[2018/06/18-09:35:07.664] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 497] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s4.csv.gz totalRecsBefore=5394
+[2018/06/18-09:35:07.732] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 565] after stream totalComp=116950 totalUncomp=521351 totalRec=6742
+[2018/06/18-09:35:07.734] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 567] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s6.csv.gz totalRecsBefore=6742
+[2018/06/18-09:35:07.783] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 616] after stream totalComp=140003 totalUncomp=625522 totalRec=8090
+[2018/06/18-09:35:07.784] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 617] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s1.csv.gz totalRecsBefore=8090
+[2018/06/18-09:35:07.817] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 650] after stream totalComp=163240 totalUncomp=729611 totalRec=9439
+[2018/06/18-09:35:07.818] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 651] start stream (gz): /home/vpai/Workspace/Dataiku/DATA_DIR/managed_datasets/DKU_TUTORIAL_ML.customers_labeled/out-s5.csv.gz totalRecsBefore=9439
+[2018/06/18-09:35:07.845] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 678] after stream totalComp=186735 totalUncomp=833666 totalRec=10787
+[2018/06/18-09:35:07.846] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.format] T-BbdSQNGc - [ct: 679] Extractor run done, totalCompressed=186735 totalRecords=10787
+[2018/06/18-09:35:07.856] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.splits] T-BbdSQNGc - [ct: 689] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=customers_labeled,sel=(method=head-s,records=100000),r=0.8,s=1337, instance id: 414a4128ed7119a08c804deb2ad81cff-0
+[2018/06/18-09:35:07.861] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.splits] T-BbdSQNGc - [ct: 694] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=customers_labeled,sel=(method=head-s,records=100000),r=0.8,s=1337 i=414a4128ed7119a08c804deb2ad81cff-0
+[2018/06/18-09:35:07.873] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.splits] T-BbdSQNGc - [ct: 706] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=customers_labeled,sel=(method=head-s,records=100000),r=0.8,s=1337 i=414a4128ed7119a08c804deb2ad81cff-0
+[2018/06/18-09:35:07.879] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.ml.python] T-BbdSQNGc - Joining processing thread ...
+[2018/06/18-09:35:07.884] [MRT-168] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp1 in /home/vpai/Workspace/Dataiku/DATA_DIR/analysis-data/DKU_TUTORIAL_ML/3H49JXgY/BbdSQNGc/sessions/s1/pp1
+[2018/06/18-09:35:07.891] [MRT-168] [INFO] [dku.block.link]  - Started a socket on port 44431
+[2018/06/18-09:35:07.905] [MRT-168] [INFO] [dip.venv.selector]  - Select in project with {"useBuiltinEnv":true,"preventOverride":false}
+[2018/06/18-09:35:07.912] [MRT-168] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /home/vpai/Workspace/Dataiku/DATA_DIR/analysis-data/DKU_TUTORIAL_ML/3H49JXgY/BbdSQNGc/sessions/s1/pp1/train.log
+[2018/06/18-09:35:07.926] [MRT-168] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2018/06/18-09:35:07.936] [MRT-168] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2018/06/18-09:35:07.937] [MRT-168] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-DKU_TUTORIAL_ML-k4ousYD on behalf of admin id=analysis-ml-DKU_TUTORIAL_ML-k4ousYD_86P7QLJeDsTe
+[2018/06/18-09:35:07.941] [MRT-168] [INFO] [dku.security.process]  - Starting process (regular)
+[2018/06/18-09:35:07.952] [MRT-168] [INFO] [dku.security.process]  - Process started with pid=2596
+/home/vpai/Workspace/Dataiku/DATA_DIR/bin/python: Missing required dependencies ['numpy']
+[2018/06/18-09:35:08.439] [KNL-python-single-command-kernel-monitor-178] [INFO] [dku.kernels]  - Process done with code 1
+[2018/06/18-09:35:08.440] [KNL-python-single-command-kernel-monitor-178] [INFO] [dip.tickets]  - Destroying API ticket for analysis-ml-DKU_TUTORIAL_ML-k4ousYD on behalf of admin
+[2018/06/18-09:35:08.443] [KNL-python-single-command-kernel-monitor-178] [ERROR] [dku.kernels]  - KernelMonitorThread done:  Closing: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=44431]
+[2018/06/18-09:35:08.444] [MRT-168] [ERROR] [dku.analysis.ml.python]  - Processing failed
+com.dataiku.dip.io.SocketBlockLink$SecretKernelTimeoutException: Subprocess failed to connect, it probably crashed at startup. Check the logs.
+	at com.dataiku.dip.io.SocketBlockLink.waitForConnection(SocketBlockLink.java:82)
+	at com.dataiku.dip.io.SecretProtectedKernelLink.waitForProcess(SecretProtectedKernelLink.java:38)
+	at com.dataiku.dip.io.PythonSecretProtectedKernel.start(PythonSecretProtectedKernel.java:84)
+	at com.dataiku.dip.analysis.ml.shared.PRNSTrainThread.run(PRNSTrainThread.java:87)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at com.dataiku.dip.io.SocketBlockLink.waitForConnection(SocketBlockLink.java:78)
+	... 3 more
+[2018/06/18-09:35:08.451] [MRT-168] [INFO] [dku.analysis.ml]  - Locking model train info file /home/vpai/Workspace/Dataiku/DATA_DIR/analysis-data/DKU_TUTORIAL_ML/3H49JXgY/BbdSQNGc/sessions/s1/pp1/m1/train_info.json
+[2018/06/18-09:35:08.453] [MRT-168] [INFO] [dku.analysis.ml]  - Unlocking model train info file /home/vpai/Workspace/Dataiku/DATA_DIR/analysis-data/DKU_TUTORIAL_ML/3H49JXgY/BbdSQNGc/sessions/s1/pp1/m1/train_info.json
+[2018/06/18-09:35:08.454] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.ml.python] T-BbdSQNGc - Processing thread joined ...
+[2018/06/18-09:35:08.454] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.ml.python] T-BbdSQNGc - Joining processing thread ...
+[2018/06/18-09:35:08.455] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.ml.python] T-BbdSQNGc - Processing thread joined ...
+[2018/06/18-09:35:08.455] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.prediction] T-BbdSQNGc - Train done
+[2018/06/18-09:35:08.456] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.prediction] T-BbdSQNGc - Train done
+[2018/06/18-09:35:08.475] [FT-TrainWorkThread-iZtVIjgS-167] [INFO] [dku.analysis.prediction] T-BbdSQNGc - Publishing mltask-train-done reflected event
